@@ -1,0 +1,102 @@
+{
+    "routes": [
+        {
+            "type": "GET",
+            "path": "/",
+            "class": "\\App\\Controller\\SeccionesController",
+            "method": "index",
+            "params": [{"seccion": "index"}],
+			"name": "index"
+        },
+		{
+            "type": "GET",
+            "path": "/home",
+            "class": "\\App\\Controller\\SeccionesController",
+            "method": "index",
+            "params": [{"seccion": "home"}],
+			"name": "home"
+        },
+        {
+            "type": "GET",
+            "path": "/quienes-somos",
+            "class": "\\App\\Controller\\SeccionesController",
+            "method": "index",
+            "params": [{"seccion": "quienes-somos"}],
+			"name": "quienes-somos"
+        },
+        {
+            "type": "GET",
+            "path": "/objetivos",
+            "class": "\\App\\Controller\\SeccionesController",
+            "method": "index",
+            "params": [{"seccion": "objetivos"}],
+			"name": "objetivos"
+        },
+        {
+            "type": "GET",
+            "path": "/mision",
+            "class": "\\App\\Controller\\SeccionesController",
+            "method": "index",
+            "params": [{"seccion": "mision"}],
+			"name": "mision"
+        },
+        {
+            "type": "GET",
+            "path": "/sorteo",
+            "class": "\\App\\Controller\\SeccionesController",
+            "method": "index",
+            "params": [{"seccion": "sorteo"}],
+			"name": "sorteo"
+        },
+        {
+            "type": "GET",
+            "path": "/ganadores-sorteo",
+            "class": "\\App\\Controller\\SeccionesController",
+            "method": "index",
+            "params": [{"seccion": "ganadores-sorteo"}],
+			"name": "ganadores-sorteo"
+        },
+		{
+            "type": "POST",
+            "path": "/sorteo/register",
+            "class": "\\App\\Controller\\RegisterController",
+            "method": "register",
+			"name": "register"
+        },
+        {
+            "type": "GET",
+            "path": "/payment/success",
+            "class": "\\App\\Controller\\PaymentAdapterController",
+            "method": "success",
+			"name": "payment-success"
+        },
+		{
+            "type": "GET",
+            "path": "/payment/failure",
+            "class": "\\App\\Controller\\PaymentAdapterController",
+            "method": "failure",
+			"name": "payment-failure"
+        },
+		{
+            "type": "GET",
+            "path": "/payment/pending",
+            "class": "\\App\\Controller\\PaymentAdapterController",
+            "method": "pending",
+			"name": "payment-pending"
+        },
+		{
+            "type": "GET",
+            "path": "/payment/confirm",
+            "class": "\\App\\Controller\\PaymentAdapterController",
+            "method": "confirm",
+			"name": "payment-confirm"
+        },
+		{
+            "type": "GET",
+            "path": "/payment/cancel",
+            "class": "\\App\\Controller\\PaymentAdapterController",
+            "method": "cancel",
+			"name": "payment-cancel"
+        }
+    ]
+}

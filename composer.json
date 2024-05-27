@@ -1,0 +1,24 @@
+{
+    "name": "App Sorteo",
+    "description": "App Sorteo",
+    "authors": [
+        {
+            "name": "Gustavo Luis",
+            "email": "gustavo639@gmail.com",
+            "homepage": "https://www.linkedin.com/in/gustavo-luis-24b9938/",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "mercadopago/dx-php": "^2.4",
+		"monolog/monolog": "1.0.*",
+        "doctrine/orm": "^2.7.4",
+        "symfony/yaml": "2.*",
+        "symfony/http-foundation": "^5.2",
+        "symfony/cache": "^5.4",
+        "phpmailer/phpmailer": "^6.5"
+    },
+	"autoload": {
+        "psr-4": {"App\\": "src/"}
+    }
+}

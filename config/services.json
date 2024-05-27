@@ -1,0 +1,9 @@
+{
+    "services": [
+		{
+            "class": "\\App\\Services\\MercadoPagoService",
+            "name": "mercado.pago.service",
+			"parameters": ["@config", "@credentials"]
+        }
+    ]
+}
